@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+.albums {
+    color: #fff;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    /* border: 2px solid red; */
+    justify-content: center;
+    grid-row-gap: 80px;
+    grid-column-gap: 140px;
+    /* width: 90%; */
+    margin: auto;
+    padding: 40px;
+}
+
+.album_name {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 30px;
+}
+
+@media screen and (max-width: 1490px) {
+
+    .albums {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    .albums {
+        grid-template-columns: 1fr;
+        padding: auto;
+        width: fit-content;
+    }
+
+}
+

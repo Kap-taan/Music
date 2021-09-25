@@ -1,0 +1,74 @@
+.card {
+    width: fit-content;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    padding-bottom: 10px;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    transition: all 0.1s ease-in;
+    box-shadow: -1px 3px 19px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 3px 19px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 19px -6px rgba(0,0,0,0.75);
+}
+
+.img {
+    margin-bottom: 10px;
+}
+
+.song_title {
+    padding: 5px;
+    text-align: center;
+    transition: all 0.4s ease;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.07, 1.07);
+}
+
+.music_control {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    /* color:  #4b8af3;  */
+    color:  #fff; 
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 7;
+    margin-bottom: 5px;
+    /* border: 2px solid  */
+}
+
+.back_btn, .next_btn, .play_btn, .pause_btn {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_btn:hover, .next_btn:hover, .play_btn:hover,.pause_btn:hover {
+    color: #FA99E1;
+    border-color:  #FA99E1;
+}
+
+.play_btn:active {
+    color: #FA99E1;
+    border-color: #FA99E1;
+}
+
+@media screen and (max-width: 500px) {
+
+    .music_control {
+        width: 100%;
+        padding: 5px;
+    }
+    .img {
+        width: 300px;
+        height: 200px;
+    }
+
+}
