@@ -15,7 +15,7 @@ const Cards = ({ song }) => {
     }
 
     return (
-            <div className={classes.card} onClick={clickHandler}>
+            <div className={classes.card} onClick={clickHandler} >
                 <img src={song.image} width={400} height={300} alt="Moon Child Era Thumbnail" className={classes.img} />
                 <h4 className={classes.song_title}>{song.title}</h4>
             </div>

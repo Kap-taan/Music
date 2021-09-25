@@ -41,7 +41,7 @@ const Card = ({ song }) => {
     return (
         <>
             <audio className="audio" />
-            <div className={classes.card} key={song.index} ref={cardRef}>
+            <div className={classes.card} ref={cardRef}>
                 <img src={song.image} width={400} height={300} alt="Moon Child Era Thumbnail" className={classes.img} />
                 <div className={classes.music_control}>
                     <div className={classes.play_btn} ref={playRef} onClick={() => {

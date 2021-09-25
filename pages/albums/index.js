@@ -14,7 +14,7 @@ const Album = () => {
         <>
             <h1 className={classes.album_name}>Albums</h1>
             <div className={classes.albums}>
-                { albums.map(album => <Cards song={album} />)}
+                { albums.map(album => <Cards song={album}key={album.l} />)}
             </div>
         </>
     );

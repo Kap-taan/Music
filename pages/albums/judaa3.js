@@ -99,7 +99,7 @@ const Judaa3 = () => {
         <>
             <h1 className={classes.album_name}>Judaa 3</h1>
             <div className={classes.albums}>
-                {songs.map(song => <Card song={song} />)}
+                {songs.map(song => <Card song={song} key={song.index} />)}
             </div>
         </>
     );

@@ -99,7 +99,7 @@ const Albums = () => {
         <>
             <h1 className={classes.album_name}>MOON CHILD ERA</h1>
             <div className={classes.albums}>
-                {songs.map(song => <Card song={song} />)}
+                {songs.map(song => <Card song={song} key={song.index} />)}
             </div>
         </>
     );
